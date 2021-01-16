@@ -28,7 +28,7 @@ function numAndWord (num1,word) {
 numAndWord(50,'four')
 
 //////////////////////////////////////////////////////
-// Coding CHallenge #3 - 1/12/2021 (monday)
+// Coding CHallenge #3 - 1/13/2021 (monday)
 /*
 Please create a function that takes in an array. The function should console.log() the 
 sum of the first value in the array and the last value in the array
@@ -41,5 +41,70 @@ function addFirstAddLast (arr) {
     console.log(result)
 }
 addFirstAddLast(mainArr)
+
+//////////////////////////////////////////////////////
+// Coding CHallenge #4 - 1/14/2021 (monday)
+/*
+Please create a function that takes in the name of a person. This function should add this person to a names list and let them 
+know their position on the list. The names list should be created outside of the function. 
+*/
+//////////////////////////////////////////////////////
+
+
+let nameList = ['john','bob']
+// let string = 'Bob'
+// let arr = ['Bob','hello',3,4,5,6,7,8]=
+// console.log(string.length)
+// console.log(arr[1].length)
+
+function namePerson(name) {
+    nameList.push(name)
+
+    for (let i = 0; i < nameList.length; i++) {
+        console.log(`You are ${i + 1} positioned in the List`)
+    }
+}
+
+namePerson('John')
+
+
+
+//////////////////////////////////////////////////////
+// Coding Challenge #5 - 1/15/2021 (monday)
+/*
+
+Please create a function that takes in an array of numbers and returns a new array that only contains odd numbers. 
+
+*/
+//////////////////////////////////////////////////////
+let nums = [1,2,3,4,5]
+let newArr = []
+
+function numArr (arr) {
+    
+    // .filter Methed
+            // result = arr.filter(x => x % 2 !== 0)
+            // console.log(result)
+    // Push method
+        arr.forEach(el => {
+
+            if (el % 2 !== 0) {
+                newArr.push(el)
+                console.log(newArr)
+            }
+        });
+}
+numArr(nums)
+
+
+
+
+
+
+
+
+
+
+
 
 
