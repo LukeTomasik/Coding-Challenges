@@ -96,8 +96,22 @@ function numArr (arr) {
 }
 numArr(nums)
 
+//////////////////////////////////////////////////////
+// Coding Challenge #6 - 1/15/2021 (monday)
+/*
 
+Please create a function that takes in a number. Print all the numbers from 1 to that number in the console, but 
+skip any number that when multiplied by three is divisible by 2.
+*/
+//////////////////////////////////////////////////////
 
+function theRightNumber(num) {
+    for (let i= 0; i<= num;i++) {
+        if ((num*3) % 2 !==0) {
+            console.log(i)
+        }
+    }
+}
 
 
 
